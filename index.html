@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Simple E-Commerce</title>
+</head>
+<body>
+
+  <header>
+    <h1 style="margin-left: -4rem; font-size: 2.5em; font-weight: bold; text-transform: uppercase; color: #333;">VitalWell.com</h1>
+    <h3 style="margin-left: -4rem;">"Where Health and Vitality Thrive."</h3>
+    <center>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </center>
+</header>
+
+<main>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="margin-bottom: -20px;"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="margin-bottom: -20px;"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="margin-bottom: -20px;"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3" style="margin-bottom: -20px;"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 4" style="margin-bottom: -20px;"></button>
+        </div>
+      <!-- Update the carousel items with specific width -->
+<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/Berry.jpg" class="d-block mx-auto" style="width: 650px; height: 400px;" alt="Berry">
+      <p>Contains healthy fats and low amounts of sugar, as well as may traces of minerals and plant compounds, including anthocyanins.</p>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/Guyabano_Wheatgrass.jpg" class="d-block mx-auto" style="width: 600px; height: 400px;" alt="Guyabano">
+      <p style="margin-top: -1px; padding-top: 1px;">Guyabano it is believed to be good against internal parasites and it’s many nutrients.<br>
+        Wheatgrass  so nutritious is considered one of the most beneficial Super Foods on earth.
+      </p>
+      
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/Herbal Coffee.jpg" class="d-block mx-auto" style="width: 600px; height: 350px;" alt="Herbal Coffee">
+      <p>Contains Non-Dairy Creamer, Coffee powder, Stevia extract powder, Mangosteen, Psyllium Husk Fiber, Green Coffee Bean, Barley Powder, Garcinia Cambogia.</p>
+    </div>
+
+    <div class="carousel-item">
+        <img src="./img/Apricot_Scented.jpg" class="d-block mx-auto" style="width: 650px; height: 400px;" alt="Herbal Coffee">
+        <p>This scrub is infused with papaya extract and Kojic to make skin smoother and lighter. Gently exfoliates your underarms with microbeads to remove dead skin and stimulate collagen production. Rich in Vitamin C and natural anti-microbial properties to reduce uneven texture and eliminate body odors.
+            Enjoy a delightful apricot scent for a luscious at-home spa experience.</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/tomato_soap.jpg" class="d-block mx-auto" style="width: 650px; height: 350px;" alt="Herbal Coffee">
+        <p>GLW Essentials Tomato Soap is made with real tomatoes and infused with Vitamin A to help shrink pores and counter skin aging. It controls excess oils and helps treat acne using the all-natural acidic and antibacterial properties of tomatoes. Enjoy younger- looking skin that is visibly clear and glowing with each wash!</p>
+      </div>
+  </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        
+
+
+    </main>
+
+    <!-- <aside id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="showCheckoutForm()">Checkout</button>
+    </aside>
+-->
+
+    <div id="checkout-form-container" class="hidden">
+        <form id="checkout-form" onsubmit="checkout(event)">
+            <label for="shipping-address">Shipping Address:</label>
+            <input type="text" id="shipping-address" required>
+            <br><br>
+            <!-- Added contact details -->
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" required>
+            <br><br>
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email" required>
+            <br><br>
+            <label for="customer-phone">Phone:</label>
+            <input type="tel" id="customer-phone" required>
+            <!-- End of contact details -->
+            <br><br>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <center><nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+            </ul>
+        </nav></center><br>
+        <p style="margin-left: -5rem;">&copy; VitalWell.com 2023. All rights reserved..</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
